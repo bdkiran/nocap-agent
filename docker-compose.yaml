@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  nocap-db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=nocap
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432 
